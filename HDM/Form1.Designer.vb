@@ -305,6 +305,7 @@ Partial Class Form1
         Me.TextBox16.Font = New System.Drawing.Font("Cambria", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TextBox16.Location = New System.Drawing.Point(10, 183)
         Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox16.Size = New System.Drawing.Size(307, 39)
         Me.TextBox16.TabIndex = 3
         Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -601,7 +602,7 @@ Partial Class Form1
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label17.ForeColor = System.Drawing.Color.Navy
-        Me.Label17.Location = New System.Drawing.Point(403, 436)
+        Me.Label17.Location = New System.Drawing.Point(403, 438)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(88, 24)
         Me.Label17.TabIndex = 0
@@ -612,7 +613,7 @@ Partial Class Form1
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label16.ForeColor = System.Drawing.Color.Navy
-        Me.Label16.Location = New System.Drawing.Point(11, 436)
+        Me.Label16.Location = New System.Drawing.Point(11, 438)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(46, 24)
         Me.Label16.TabIndex = 0
