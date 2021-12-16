@@ -239,6 +239,8 @@ Partial Class Form1
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.BackgroundImage = Global.HDM.My.Resources.Resources.Main
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel2.Controls.Add(Me.TabControl1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 25)
@@ -344,6 +346,8 @@ Partial Class Form1
         'treg
         '
         Me.treg.BackColor = System.Drawing.Color.PaleTurquoise
+        Me.treg.BackgroundImage = Global.HDM.My.Resources.Resources.reg1
+        Me.treg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.treg.Controls.Add(Me.Button1)
         Me.treg.Controls.Add(Me.RichTextBox1)
         Me.treg.Controls.Add(Me.TextBox14)
@@ -392,13 +396,16 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Blue
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Georgia", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(804, 576)
+        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.Location = New System.Drawing.Point(804, 577)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(416, 97)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "Register"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'RichTextBox1
         '
@@ -545,8 +552,9 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Blue
         Me.Label4.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.ForeColor = System.Drawing.Color.Navy
+        Me.Label4.ForeColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(1005, 15)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(136, 24)
@@ -556,8 +564,9 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Blue
         Me.Label3.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.Navy
+        Me.Label3.ForeColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(620, 15)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 24)
@@ -567,8 +576,9 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Blue
         Me.Label2.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.Navy
+        Me.Label2.ForeColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(320, 15)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(110, 24)
@@ -578,8 +588,9 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Blue
         Me.Label7.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.ForeColor = System.Drawing.Color.Navy
+        Me.Label7.ForeColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(1005, 204)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(122, 24)
@@ -589,8 +600,9 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Blue
         Me.Label6.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.ForeColor = System.Drawing.Color.Navy
+        Me.Label6.ForeColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(558, 204)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(152, 24)
@@ -600,8 +612,9 @@ Partial Class Form1
         'Label17
         '
         Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Blue
         Me.Label17.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label17.ForeColor = System.Drawing.Color.Navy
+        Me.Label17.ForeColor = System.Drawing.Color.Transparent
         Me.Label17.Location = New System.Drawing.Point(403, 438)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(88, 24)
@@ -611,8 +624,9 @@ Partial Class Form1
         'Label16
         '
         Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Blue
         Me.Label16.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label16.ForeColor = System.Drawing.Color.Navy
+        Me.Label16.ForeColor = System.Drawing.Color.Transparent
         Me.Label16.Location = New System.Drawing.Point(11, 438)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(46, 24)
@@ -621,8 +635,9 @@ Partial Class Form1
         '
         'Label22
         '
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
-        Me.Label22.ForeColor = System.Drawing.Color.Gray
+        Me.Label22.ForeColor = System.Drawing.Color.Beige
         Me.Label22.Location = New System.Drawing.Point(816, 480)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(404, 83)
@@ -633,8 +648,9 @@ Partial Class Form1
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Blue
         Me.Label15.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label15.ForeColor = System.Drawing.Color.Navy
+        Me.Label15.ForeColor = System.Drawing.Color.Transparent
         Me.Label15.Location = New System.Drawing.Point(816, 340)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(93, 24)
@@ -644,8 +660,9 @@ Partial Class Form1
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Blue
         Me.Label14.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label14.ForeColor = System.Drawing.Color.Navy
+        Me.Label14.ForeColor = System.Drawing.Color.Transparent
         Me.Label14.Location = New System.Drawing.Point(403, 340)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(63, 24)
@@ -655,8 +672,9 @@ Partial Class Form1
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Blue
         Me.Label13.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.ForeColor = System.Drawing.Color.Navy
+        Me.Label13.ForeColor = System.Drawing.Color.Transparent
         Me.Label13.Location = New System.Drawing.Point(11, 340)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(80, 24)
@@ -666,8 +684,9 @@ Partial Class Form1
         'Label18
         '
         Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Blue
         Me.Label18.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label18.ForeColor = System.Drawing.Color.Navy
+        Me.Label18.ForeColor = System.Drawing.Color.Transparent
         Me.Label18.Location = New System.Drawing.Point(6, 540)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(90, 24)
@@ -688,8 +707,9 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Blue
         Me.Label5.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.Color.Navy
+        Me.Label5.ForeColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(10, 204)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(60, 24)
@@ -699,8 +719,9 @@ Partial Class Form1
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Blue
         Me.Label12.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.ForeColor = System.Drawing.Color.Navy
+        Me.Label12.ForeColor = System.Drawing.Color.Transparent
         Me.Label12.Location = New System.Drawing.Point(758, 112)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(188, 24)
@@ -710,8 +731,9 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Blue
         Me.Label11.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.ForeColor = System.Drawing.Color.Navy
+        Me.Label11.ForeColor = System.Drawing.Color.Transparent
         Me.Label11.Location = New System.Drawing.Point(450, 112)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(118, 24)
@@ -721,8 +743,9 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Blue
         Me.Label10.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.ForeColor = System.Drawing.Color.Navy
+        Me.Label10.ForeColor = System.Drawing.Color.Transparent
         Me.Label10.Location = New System.Drawing.Point(176, 112)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(76, 24)
@@ -732,8 +755,9 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Blue
         Me.Label9.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.ForeColor = System.Drawing.Color.Navy
+        Me.Label9.ForeColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(10, 112)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(43, 24)
@@ -743,8 +767,9 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Blue
         Me.Label1.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.Navy
+        Me.Label1.ForeColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(6, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(178, 24)
@@ -753,6 +778,8 @@ Partial Class Form1
         '
         'tmon
         '
+        Me.tmon.BackgroundImage = Global.HDM.My.Resources.Resources.covid11
+        Me.tmon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.tmon.Location = New System.Drawing.Point(4, 31)
         Me.tmon.Name = "tmon"
         Me.tmon.Padding = New System.Windows.Forms.Padding(3)
@@ -763,6 +790,8 @@ Partial Class Form1
         '
         'tadmin
         '
+        Me.tadmin.BackgroundImage = Global.HDM.My.Resources.Resources.covid_2
+        Me.tadmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.tadmin.Location = New System.Drawing.Point(4, 31)
         Me.tadmin.Name = "tadmin"
         Me.tadmin.Padding = New System.Windows.Forms.Padding(3)
