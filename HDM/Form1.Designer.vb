@@ -22,13 +22,14 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.noti = New System.Windows.Forms.RichTextBox()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.PB = New System.Windows.Forms.ProgressBar()
+        Me.cuser = New System.Windows.Forms.Label()
+        Me.clevel = New System.Windows.Forms.Label()
+        Me.PBAR = New System.Windows.Forms.ProgressBar()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
@@ -36,12 +37,12 @@ Partial Class Form1
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TC = New System.Windows.Forms.TabControl()
         Me.llogin = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.Blogin = New System.Windows.Forms.Button()
+        Me.loginpass = New System.Windows.Forms.TextBox()
+        Me.loginuser = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.treg = New System.Windows.Forms.TabPage()
@@ -83,6 +84,84 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tmon = New System.Windows.Forms.TabPage()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.BSUBMIT = New System.Windows.Forms.Button()
+        Me.HDTEMP = New System.Windows.Forms.TextBox()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.ytae = New System.Windows.Forms.RadioButton()
+        Me.ntae = New System.Windows.Forms.RadioButton()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.yulo = New System.Windows.Forms.RadioButton()
+        Me.nulo = New System.Windows.Forms.RadioButton()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.ysuka = New System.Windows.Forms.RadioButton()
+        Me.nsuka = New System.Windows.Forms.RadioButton()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.ypagod = New System.Windows.Forms.RadioButton()
+        Me.npagod = New System.Windows.Forms.RadioButton()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.yltravel = New System.Windows.Forms.RadioButton()
+        Me.nltravel = New System.Windows.Forms.RadioButton()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.ygtravel = New System.Windows.Forms.RadioButton()
+        Me.ngtravel = New System.Windows.Forms.RadioButton()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.yf2c = New System.Windows.Forms.RadioButton()
+        Me.nf2c = New System.Windows.Forms.RadioButton()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.yf2f = New System.Windows.Forms.RadioButton()
+        Me.nf2f = New System.Windows.Forms.RadioButton()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.ydob = New System.Windows.Forms.RadioButton()
+        Me.ndob = New System.Windows.Forms.RadioButton()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.ybody = New System.Windows.Forms.RadioButton()
+        Me.nbody = New System.Windows.Forms.RadioButton()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.yfever = New System.Windows.Forms.RadioButton()
+        Me.nfever = New System.Windows.Forms.RadioButton()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.ylost = New System.Windows.Forms.RadioButton()
+        Me.nlost = New System.Windows.Forms.RadioButton()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.ysore = New System.Windows.Forms.RadioButton()
+        Me.nsore = New System.Windows.Forms.RadioButton()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.yubo = New System.Windows.Forms.RadioButton()
+        Me.nubo = New System.Windows.Forms.RadioButton()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.HDMAIL = New System.Windows.Forms.TextBox()
+        Me.HDPHONE = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.HDADDRESS = New System.Windows.Forms.RichTextBox()
+        Me.HDTIME = New System.Windows.Forms.DateTimePicker()
+        Me.HDDATE = New System.Windows.Forms.DateTimePicker()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.HDNAME = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.BID = New System.Windows.Forms.Button()
+        Me.hdid = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
         Me.tadmin = New System.Windows.Forms.TabPage()
         Me.Panel1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,10 +174,28 @@ Partial Class Form1
         Me.SplitContainer2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
+        Me.TC.SuspendLayout()
         Me.llogin.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.treg.SuspendLayout()
+        Me.tmon.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel16.SuspendLayout()
+        Me.Panel15.SuspendLayout()
+        Me.Panel14.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -120,28 +217,28 @@ Partial Class Form1
         '
         'SplitContainer1.Panel1
         '
-        Me.SplitContainer1.Panel1.Controls.Add(Me.RichTextBox2)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.noti)
         '
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.SplitContainer2)
-        Me.SplitContainer1.Panel2.Controls.Add(Me.PB)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.PBAR)
         Me.SplitContainer1.Size = New System.Drawing.Size(1244, 71)
         Me.SplitContainer1.SplitterDistance = 704
         Me.SplitContainer1.TabIndex = 0
         '
-        'RichTextBox2
+        'noti
         '
-        Me.RichTextBox2.BackColor = System.Drawing.Color.Black
-        Me.RichTextBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox2.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RichTextBox2.ForeColor = System.Drawing.Color.SpringGreen
-        Me.RichTextBox2.Location = New System.Drawing.Point(0, 0)
-        Me.RichTextBox2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(702, 69)
-        Me.RichTextBox2.TabIndex = 0
-        Me.RichTextBox2.Text = "  Notification System"
+        Me.noti.BackColor = System.Drawing.Color.Black
+        Me.noti.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.noti.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.noti.ForeColor = System.Drawing.Color.SpringGreen
+        Me.noti.Location = New System.Drawing.Point(0, 0)
+        Me.noti.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.noti.Name = "noti"
+        Me.noti.Size = New System.Drawing.Size(702, 69)
+        Me.noti.TabIndex = 0
+        Me.noti.Text = "  Notification System"
         '
         'SplitContainer2
         '
@@ -152,49 +249,49 @@ Partial Class Form1
         '
         'SplitContainer2.Panel1
         '
-        Me.SplitContainer2.Panel1.Controls.Add(Me.Label19)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cuser)
         '
         'SplitContainer2.Panel2
         '
-        Me.SplitContainer2.Panel2.Controls.Add(Me.Label20)
+        Me.SplitContainer2.Panel2.Controls.Add(Me.clevel)
         Me.SplitContainer2.Size = New System.Drawing.Size(534, 36)
         Me.SplitContainer2.SplitterDistance = 288
         Me.SplitContainer2.TabIndex = 1
         '
-        'Label19
+        'cuser
         '
-        Me.Label19.BackColor = System.Drawing.Color.Black
-        Me.Label19.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label19.ForeColor = System.Drawing.Color.Yellow
-        Me.Label19.Location = New System.Drawing.Point(0, 0)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(288, 36)
-        Me.Label19.TabIndex = 1
-        Me.Label19.Text = "Current User: Dan Kenneth Royo "
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.cuser.BackColor = System.Drawing.Color.Black
+        Me.cuser.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cuser.ForeColor = System.Drawing.Color.Yellow
+        Me.cuser.Location = New System.Drawing.Point(0, 0)
+        Me.cuser.Name = "cuser"
+        Me.cuser.Size = New System.Drawing.Size(288, 36)
+        Me.cuser.TabIndex = 1
+        Me.cuser.Text = "Current User: Dan Kenneth Royo "
+        Me.cuser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label20
+        'clevel
         '
-        Me.Label20.BackColor = System.Drawing.Color.Black
-        Me.Label20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label20.ForeColor = System.Drawing.Color.Chartreuse
-        Me.Label20.Location = New System.Drawing.Point(0, 0)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(242, 36)
-        Me.Label20.TabIndex = 1
-        Me.Label20.Text = "Access Level: 3"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.clevel.BackColor = System.Drawing.Color.Black
+        Me.clevel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.clevel.ForeColor = System.Drawing.Color.Chartreuse
+        Me.clevel.Location = New System.Drawing.Point(0, 0)
+        Me.clevel.Name = "clevel"
+        Me.clevel.Size = New System.Drawing.Size(242, 36)
+        Me.clevel.TabIndex = 1
+        Me.clevel.Text = "Access Level: 3"
+        Me.clevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PB
+        'PBAR
         '
-        Me.PB.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PB.ForeColor = System.Drawing.Color.Fuchsia
-        Me.PB.Location = New System.Drawing.Point(0, 36)
-        Me.PB.MarqueeAnimationSpeed = 10
-        Me.PB.Name = "PB"
-        Me.PB.Size = New System.Drawing.Size(534, 33)
-        Me.PB.TabIndex = 0
-        Me.PB.Value = 50
+        Me.PBAR.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PBAR.ForeColor = System.Drawing.Color.Fuchsia
+        Me.PBAR.Location = New System.Drawing.Point(0, 36)
+        Me.PBAR.MarqueeAnimationSpeed = 10
+        Me.PBAR.Name = "PBAR"
+        Me.PBAR.Size = New System.Drawing.Size(534, 33)
+        Me.PBAR.TabIndex = 0
+        Me.PBAR.Value = 50
         '
         'MenuStrip1
         '
@@ -241,26 +338,26 @@ Partial Class Form1
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.BackgroundImage = Global.HDM.My.Resources.Resources.Main
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel2.Controls.Add(Me.TabControl1)
+        Me.Panel2.Controls.Add(Me.TC)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 25)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1244, 736)
         Me.Panel2.TabIndex = 2
         '
-        'TabControl1
+        'TC
         '
-        Me.TabControl1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons
-        Me.TabControl1.Controls.Add(Me.llogin)
-        Me.TabControl1.Controls.Add(Me.treg)
-        Me.TabControl1.Controls.Add(Me.tmon)
-        Me.TabControl1.Controls.Add(Me.tadmin)
-        Me.TabControl1.Location = New System.Drawing.Point(5, 6)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1234, 727)
-        Me.TabControl1.TabIndex = 0
+        Me.TC.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TC.Appearance = System.Windows.Forms.TabAppearance.FlatButtons
+        Me.TC.Controls.Add(Me.llogin)
+        Me.TC.Controls.Add(Me.treg)
+        Me.TC.Controls.Add(Me.tmon)
+        Me.TC.Controls.Add(Me.tadmin)
+        Me.TC.Location = New System.Drawing.Point(5, 6)
+        Me.TC.Name = "TC"
+        Me.TC.SelectedIndex = 0
+        Me.TC.Size = New System.Drawing.Size(1234, 727)
+        Me.TC.TabIndex = 0
         '
         'llogin
         '
@@ -278,48 +375,48 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.TextBox16)
-        Me.GroupBox1.Controls.Add(Me.TextBox15)
+        Me.GroupBox1.Controls.Add(Me.Blogin)
+        Me.GroupBox1.Controls.Add(Me.loginpass)
+        Me.GroupBox1.Controls.Add(Me.loginuser)
         Me.GroupBox1.Controls.Add(Me.Label23)
         Me.GroupBox1.Controls.Add(Me.Label21)
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GroupBox1.Location = New System.Drawing.Point(445, 165)
+        Me.GroupBox1.Location = New System.Drawing.Point(445, 166)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(327, 350)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Button2
+        'Blogin
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button2.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(98, 243)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(130, 42)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Login"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Blogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Blogin.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Blogin.ForeColor = System.Drawing.Color.Black
+        Me.Blogin.Location = New System.Drawing.Point(98, 243)
+        Me.Blogin.Name = "Blogin"
+        Me.Blogin.Size = New System.Drawing.Size(130, 42)
+        Me.Blogin.TabIndex = 4
+        Me.Blogin.Text = "Login"
+        Me.Blogin.UseVisualStyleBackColor = False
         '
-        'TextBox16
+        'loginpass
         '
-        Me.TextBox16.Font = New System.Drawing.Font("Cambria", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox16.Location = New System.Drawing.Point(10, 183)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox16.Size = New System.Drawing.Size(307, 39)
-        Me.TextBox16.TabIndex = 3
-        Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.loginpass.Font = New System.Drawing.Font("Cambria", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.loginpass.Location = New System.Drawing.Point(10, 183)
+        Me.loginpass.Name = "loginpass"
+        Me.loginpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.loginpass.Size = New System.Drawing.Size(307, 39)
+        Me.loginpass.TabIndex = 3
+        Me.loginpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox15
+        'loginuser
         '
-        Me.TextBox15.Font = New System.Drawing.Font("Cambria", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox15.Location = New System.Drawing.Point(10, 94)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(307, 39)
-        Me.TextBox15.TabIndex = 2
-        Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.loginuser.Font = New System.Drawing.Font("Cambria", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.loginuser.Location = New System.Drawing.Point(10, 94)
+        Me.loginuser.Name = "loginuser"
+        Me.loginuser.Size = New System.Drawing.Size(307, 39)
+        Me.loginuser.TabIndex = 2
+        Me.loginuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label23
         '
@@ -346,7 +443,7 @@ Partial Class Form1
         'treg
         '
         Me.treg.BackColor = System.Drawing.Color.PaleTurquoise
-        Me.treg.BackgroundImage = Global.HDM.My.Resources.Resources.reg1
+        Me.treg.BackgroundImage = Global.HDM.My.Resources.Resources.covid3
         Me.treg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.treg.Controls.Add(Me.Button1)
         Me.treg.Controls.Add(Me.RichTextBox1)
@@ -410,9 +507,9 @@ Partial Class Form1
         'RichTextBox1
         '
         Me.RichTextBox1.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RichTextBox1.Location = New System.Drawing.Point(10, 577)
+        Me.RichTextBox1.Location = New System.Drawing.Point(11, 577)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(782, 96)
+        Me.RichTextBox1.Size = New System.Drawing.Size(781, 96)
         Me.RichTextBox1.TabIndex = 17
         Me.RichTextBox1.Text = ""
         '
@@ -551,85 +648,78 @@ Partial Class Form1
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Blue
+        Me.Label4.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label4.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label4.ForeColor = System.Drawing.Color.Transparent
-        Me.Label4.Location = New System.Drawing.Point(1005, 15)
+        Me.Label4.Location = New System.Drawing.Point(1010, 22)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(136, 24)
+        Me.Label4.Size = New System.Drawing.Size(210, 24)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Middle Name "
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Blue
+        Me.Label3.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label3.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label3.ForeColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(620, 15)
+        Me.Label3.Location = New System.Drawing.Point(622, 22)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(106, 24)
+        Me.Label3.Size = New System.Drawing.Size(361, 24)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Last Name"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Blue
+        Me.Label2.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label2.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(320, 15)
+        Me.Label2.Location = New System.Drawing.Point(320, 22)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 24)
+        Me.Label2.Size = New System.Drawing.Size(281, 24)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "First Name"
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Blue
+        Me.Label7.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label7.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(1005, 204)
+        Me.Label7.Location = New System.Drawing.Point(1010, 214)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(122, 24)
+        Me.Label7.Size = New System.Drawing.Size(210, 24)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Access Level"
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Blue
+        Me.Label6.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label6.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ForeColor = System.Drawing.Color.Transparent
-        Me.Label6.Location = New System.Drawing.Point(558, 204)
+        Me.Label6.Location = New System.Drawing.Point(570, 214)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(152, 24)
+        Me.Label6.Size = New System.Drawing.Size(413, 24)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Mobile Number"
         '
         'Label17
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Blue
+        Me.Label17.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label17.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label17.ForeColor = System.Drawing.Color.Transparent
-        Me.Label17.Location = New System.Drawing.Point(403, 438)
+        Me.Label17.Location = New System.Drawing.Point(403, 453)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(88, 24)
+        Me.Label17.Size = New System.Drawing.Size(389, 24)
         Me.Label17.TabIndex = 0
         Me.Label17.Text = "Province"
         '
         'Label16
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.Blue
+        Me.Label16.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label16.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label16.ForeColor = System.Drawing.Color.Transparent
-        Me.Label16.Location = New System.Drawing.Point(11, 438)
+        Me.Label16.Location = New System.Drawing.Point(11, 453)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(46, 24)
+        Me.Label16.Size = New System.Drawing.Size(370, 24)
         Me.Label16.TabIndex = 0
         Me.Label16.Text = "City"
         '
@@ -647,139 +737,132 @@ Partial Class Form1
         '
         'Label15
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.Blue
+        Me.Label15.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label15.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label15.ForeColor = System.Drawing.Color.Transparent
-        Me.Label15.Location = New System.Drawing.Point(816, 340)
+        Me.Label15.Location = New System.Drawing.Point(816, 354)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(93, 24)
+        Me.Label15.Size = New System.Drawing.Size(404, 24)
         Me.Label15.TabIndex = 0
         Me.Label15.Text = "Barangay"
         '
         'Label14
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.Blue
+        Me.Label14.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label14.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.ForeColor = System.Drawing.Color.Transparent
-        Me.Label14.Location = New System.Drawing.Point(403, 340)
+        Me.Label14.Location = New System.Drawing.Point(403, 354)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(63, 24)
+        Me.Label14.Size = New System.Drawing.Size(389, 24)
         Me.Label14.TabIndex = 0
         Me.Label14.Text = "Street"
         '
         'Label13
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.Blue
+        Me.Label13.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label13.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label13.ForeColor = System.Drawing.Color.Transparent
-        Me.Label13.Location = New System.Drawing.Point(11, 340)
+        Me.Label13.Location = New System.Drawing.Point(11, 354)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(80, 24)
+        Me.Label13.Size = New System.Drawing.Size(370, 24)
         Me.Label13.TabIndex = 0
         Me.Label13.Text = "Blk. Lot"
         '
         'Label18
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Blue
+        Me.Label18.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label18.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label18.ForeColor = System.Drawing.Color.Transparent
-        Me.Label18.Location = New System.Drawing.Point(6, 540)
+        Me.Label18.Location = New System.Drawing.Point(11, 550)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(90, 24)
+        Me.Label18.Size = New System.Drawing.Size(781, 24)
         Me.Label18.TabIndex = 0
         Me.Label18.Text = "Remarks"
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label8.ForeColor = System.Drawing.Color.Gray
-        Me.Label8.Location = New System.Drawing.Point(6, 301)
+        Me.Label8.Location = New System.Drawing.Point(11, 301)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(172, 24)
+        Me.Label8.Size = New System.Drawing.Size(1209, 24)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Complete Address"
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Blue
+        Me.Label5.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label5.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.Color.Transparent
-        Me.Label5.Location = New System.Drawing.Point(10, 204)
+        Me.Label5.Location = New System.Drawing.Point(11, 214)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 24)
+        Me.Label5.Size = New System.Drawing.Size(522, 24)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "email"
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.Blue
+        Me.Label12.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label12.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label12.ForeColor = System.Drawing.Color.Transparent
-        Me.Label12.Location = New System.Drawing.Point(758, 112)
+        Me.Label12.Location = New System.Drawing.Point(764, 121)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(188, 24)
+        Me.Label12.Size = New System.Drawing.Size(456, 24)
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Immediate superior"
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Blue
+        Me.Label11.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label11.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label11.ForeColor = System.Drawing.Color.Transparent
-        Me.Label11.Location = New System.Drawing.Point(450, 112)
+        Me.Label11.Location = New System.Drawing.Point(450, 121)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(118, 24)
+        Me.Label11.Size = New System.Drawing.Size(288, 24)
         Me.Label11.TabIndex = 0
         Me.Label11.Text = "Department"
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Blue
+        Me.Label10.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label10.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label10.ForeColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(176, 112)
+        Me.Label10.Location = New System.Drawing.Point(187, 121)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(76, 24)
+        Me.Label10.Size = New System.Drawing.Size(240, 24)
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Gender"
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Blue
+        Me.Label9.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label9.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label9.ForeColor = System.Drawing.Color.Transparent
-        Me.Label9.Location = New System.Drawing.Point(10, 112)
+        Me.Label9.Location = New System.Drawing.Point(11, 121)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(43, 24)
+        Me.Label9.Size = New System.Drawing.Size(151, 24)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Age"
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Blue
+        Me.Label1.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label1.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(6, 15)
+        Me.Label1.Location = New System.Drawing.Point(11, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(178, 24)
+        Me.Label1.Size = New System.Drawing.Size(288, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Employee Number"
         '
         'tmon
         '
-        Me.tmon.BackgroundImage = Global.HDM.My.Resources.Resources.covid11
-        Me.tmon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.tmon.BackgroundImage = Global.HDM.My.Resources.Resources.loging
+        Me.tmon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.tmon.Controls.Add(Me.GroupBox4)
+        Me.tmon.Controls.Add(Me.GroupBox3)
+        Me.tmon.Controls.Add(Me.GroupBox2)
+        Me.tmon.Controls.Add(Me.Label24)
         Me.tmon.Location = New System.Drawing.Point(4, 31)
         Me.tmon.Name = "tmon"
         Me.tmon.Padding = New System.Windows.Forms.Padding(3)
@@ -787,6 +870,985 @@ Partial Class Form1
         Me.tmon.TabIndex = 1
         Me.tmon.Text = "Health Declaration"
         Me.tmon.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.Controls.Add(Me.BSUBMIT)
+        Me.GroupBox4.Controls.Add(Me.HDTEMP)
+        Me.GroupBox4.Controls.Add(Me.Label46)
+        Me.GroupBox4.Controls.Add(Me.Panel10)
+        Me.GroupBox4.Controls.Add(Me.Panel9)
+        Me.GroupBox4.Controls.Add(Me.Panel8)
+        Me.GroupBox4.Controls.Add(Me.Panel7)
+        Me.GroupBox4.Controls.Add(Me.Panel16)
+        Me.GroupBox4.Controls.Add(Me.Panel15)
+        Me.GroupBox4.Controls.Add(Me.Panel14)
+        Me.GroupBox4.Controls.Add(Me.Panel13)
+        Me.GroupBox4.Controls.Add(Me.Panel12)
+        Me.GroupBox4.Controls.Add(Me.Panel5)
+        Me.GroupBox4.Controls.Add(Me.Panel3)
+        Me.GroupBox4.Controls.Add(Me.Panel11)
+        Me.GroupBox4.Controls.Add(Me.Panel6)
+        Me.GroupBox4.Controls.Add(Me.Panel4)
+        Me.GroupBox4.Controls.Add(Me.Label45)
+        Me.GroupBox4.Controls.Add(Me.Label44)
+        Me.GroupBox4.Controls.Add(Me.Label43)
+        Me.GroupBox4.Controls.Add(Me.Label42)
+        Me.GroupBox4.Controls.Add(Me.Label31)
+        Me.GroupBox4.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.GroupBox4.ForeColor = System.Drawing.Color.Blue
+        Me.GroupBox4.Location = New System.Drawing.Point(437, 77)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(767, 593)
+        Me.GroupBox4.TabIndex = 3
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Health Declaration"
+        '
+        'BSUBMIT
+        '
+        Me.BSUBMIT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BSUBMIT.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.BSUBMIT.ForeColor = System.Drawing.Color.White
+        Me.BSUBMIT.Location = New System.Drawing.Point(227, 539)
+        Me.BSUBMIT.Name = "BSUBMIT"
+        Me.BSUBMIT.Size = New System.Drawing.Size(533, 47)
+        Me.BSUBMIT.TabIndex = 8
+        Me.BSUBMIT.Text = "Submit"
+        Me.BSUBMIT.UseVisualStyleBackColor = False
+        '
+        'HDTEMP
+        '
+        Me.HDTEMP.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HDTEMP.Location = New System.Drawing.Point(10, 555)
+        Me.HDTEMP.Name = "HDTEMP"
+        Me.HDTEMP.Size = New System.Drawing.Size(201, 30)
+        Me.HDTEMP.TabIndex = 7
+        Me.HDTEMP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label46.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label46.Location = New System.Drawing.Point(6, 537)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(214, 18)
+        Me.Label46.TabIndex = 6
+        Me.Label46.Text = "Temperature / Temperatura"
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.White
+        Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel10.Controls.Add(Me.ytae)
+        Me.Panel10.Controls.Add(Me.ntae)
+        Me.Panel10.Controls.Add(Me.Label39)
+        Me.Panel10.Location = New System.Drawing.Point(235, 74)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(253, 43)
+        Me.Panel10.TabIndex = 5
+        '
+        'ytae
+        '
+        Me.ytae.AutoSize = True
+        Me.ytae.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ytae.ForeColor = System.Drawing.Color.Red
+        Me.ytae.Location = New System.Drawing.Point(145, 0)
+        Me.ytae.Name = "ytae"
+        Me.ytae.Size = New System.Drawing.Size(56, 41)
+        Me.ytae.TabIndex = 3
+        Me.ytae.TabStop = True
+        Me.ytae.Text = "YES"
+        Me.ytae.UseVisualStyleBackColor = True
+        '
+        'ntae
+        '
+        Me.ntae.AutoSize = True
+        Me.ntae.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ntae.ForeColor = System.Drawing.Color.Blue
+        Me.ntae.Location = New System.Drawing.Point(201, 0)
+        Me.ntae.Name = "ntae"
+        Me.ntae.Size = New System.Drawing.Size(50, 41)
+        Me.ntae.TabIndex = 2
+        Me.ntae.TabStop = True
+        Me.ntae.Text = "NO"
+        Me.ntae.UseVisualStyleBackColor = True
+        '
+        'Label39
+        '
+        Me.Label39.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label39.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label39.ForeColor = System.Drawing.Color.Black
+        Me.Label39.Location = New System.Drawing.Point(0, 0)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(96, 41)
+        Me.Label39.TabIndex = 1
+        Me.Label39.Text = "Diarrhea " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Pagtatae)"
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.White
+        Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel9.Controls.Add(Me.yulo)
+        Me.Panel9.Controls.Add(Me.nulo)
+        Me.Panel9.Controls.Add(Me.Label38)
+        Me.Panel9.Location = New System.Drawing.Point(234, 120)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(254, 43)
+        Me.Panel9.TabIndex = 5
+        '
+        'yulo
+        '
+        Me.yulo.AutoSize = True
+        Me.yulo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.yulo.ForeColor = System.Drawing.Color.Red
+        Me.yulo.Location = New System.Drawing.Point(146, 0)
+        Me.yulo.Name = "yulo"
+        Me.yulo.Size = New System.Drawing.Size(56, 41)
+        Me.yulo.TabIndex = 3
+        Me.yulo.TabStop = True
+        Me.yulo.Text = "YES"
+        Me.yulo.UseVisualStyleBackColor = True
+        '
+        'nulo
+        '
+        Me.nulo.AutoSize = True
+        Me.nulo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.nulo.ForeColor = System.Drawing.Color.Blue
+        Me.nulo.Location = New System.Drawing.Point(202, 0)
+        Me.nulo.Name = "nulo"
+        Me.nulo.Size = New System.Drawing.Size(50, 41)
+        Me.nulo.TabIndex = 2
+        Me.nulo.TabStop = True
+        Me.nulo.Text = "NO"
+        Me.nulo.UseVisualStyleBackColor = True
+        '
+        'Label38
+        '
+        Me.Label38.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label38.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label38.ForeColor = System.Drawing.Color.Black
+        Me.Label38.Location = New System.Drawing.Point(0, 0)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(138, 41)
+        Me.Label38.TabIndex = 1
+        Me.Label38.Text = " Headache " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Pananakit ng ulo)"
+        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.White
+        Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel8.Controls.Add(Me.ysuka)
+        Me.Panel8.Controls.Add(Me.nsuka)
+        Me.Panel8.Controls.Add(Me.Label37)
+        Me.Panel8.Location = New System.Drawing.Point(492, 120)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(269, 43)
+        Me.Panel8.TabIndex = 5
+        '
+        'ysuka
+        '
+        Me.ysuka.AutoSize = True
+        Me.ysuka.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ysuka.ForeColor = System.Drawing.Color.Red
+        Me.ysuka.Location = New System.Drawing.Point(161, 0)
+        Me.ysuka.Name = "ysuka"
+        Me.ysuka.Size = New System.Drawing.Size(56, 41)
+        Me.ysuka.TabIndex = 3
+        Me.ysuka.TabStop = True
+        Me.ysuka.Text = "YES"
+        Me.ysuka.UseVisualStyleBackColor = True
+        '
+        'nsuka
+        '
+        Me.nsuka.AutoSize = True
+        Me.nsuka.Dock = System.Windows.Forms.DockStyle.Right
+        Me.nsuka.ForeColor = System.Drawing.Color.Blue
+        Me.nsuka.Location = New System.Drawing.Point(217, 0)
+        Me.nsuka.Name = "nsuka"
+        Me.nsuka.Size = New System.Drawing.Size(50, 41)
+        Me.nsuka.TabIndex = 2
+        Me.nsuka.TabStop = True
+        Me.nsuka.Text = "NO"
+        Me.nsuka.UseVisualStyleBackColor = True
+        '
+        'Label37
+        '
+        Me.Label37.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label37.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label37.ForeColor = System.Drawing.Color.Black
+        Me.Label37.Location = New System.Drawing.Point(0, 0)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(146, 41)
+        Me.Label37.TabIndex = 1
+        Me.Label37.Text = "Vomiting" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Pagsusuka)"
+        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.White
+        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel7.Controls.Add(Me.ypagod)
+        Me.Panel7.Controls.Add(Me.npagod)
+        Me.Panel7.Controls.Add(Me.Label36)
+        Me.Panel7.Location = New System.Drawing.Point(5, 121)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(226, 43)
+        Me.Panel7.TabIndex = 5
+        '
+        'ypagod
+        '
+        Me.ypagod.AutoSize = True
+        Me.ypagod.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ypagod.ForeColor = System.Drawing.Color.Red
+        Me.ypagod.Location = New System.Drawing.Point(118, 0)
+        Me.ypagod.Name = "ypagod"
+        Me.ypagod.Size = New System.Drawing.Size(56, 41)
+        Me.ypagod.TabIndex = 3
+        Me.ypagod.TabStop = True
+        Me.ypagod.Text = "YES"
+        Me.ypagod.UseVisualStyleBackColor = True
+        '
+        'npagod
+        '
+        Me.npagod.AutoSize = True
+        Me.npagod.Dock = System.Windows.Forms.DockStyle.Right
+        Me.npagod.ForeColor = System.Drawing.Color.Blue
+        Me.npagod.Location = New System.Drawing.Point(174, 0)
+        Me.npagod.Name = "npagod"
+        Me.npagod.Size = New System.Drawing.Size(50, 41)
+        Me.npagod.TabIndex = 2
+        Me.npagod.TabStop = True
+        Me.npagod.Text = "NO"
+        Me.npagod.UseVisualStyleBackColor = True
+        '
+        'Label36
+        '
+        Me.Label36.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label36.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label36.ForeColor = System.Drawing.Color.Black
+        Me.Label36.Location = New System.Drawing.Point(0, 0)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(146, 41)
+        Me.Label36.TabIndex = 1
+        Me.Label36.Text = "Fatigue " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Pagkapagod)"
+        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel16
+        '
+        Me.Panel16.BackColor = System.Drawing.Color.White
+        Me.Panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel16.Controls.Add(Me.yltravel)
+        Me.Panel16.Controls.Add(Me.nltravel)
+        Me.Panel16.Location = New System.Drawing.Point(682, 482)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(78, 49)
+        Me.Panel16.TabIndex = 5
+        '
+        'yltravel
+        '
+        Me.yltravel.AutoSize = True
+        Me.yltravel.ForeColor = System.Drawing.Color.Red
+        Me.yltravel.Location = New System.Drawing.Point(15, 1)
+        Me.yltravel.Name = "yltravel"
+        Me.yltravel.Size = New System.Drawing.Size(56, 22)
+        Me.yltravel.TabIndex = 3
+        Me.yltravel.TabStop = True
+        Me.yltravel.Text = "YES"
+        Me.yltravel.UseVisualStyleBackColor = True
+        '
+        'nltravel
+        '
+        Me.nltravel.AutoSize = True
+        Me.nltravel.ForeColor = System.Drawing.Color.Blue
+        Me.nltravel.Location = New System.Drawing.Point(15, 26)
+        Me.nltravel.Name = "nltravel"
+        Me.nltravel.Size = New System.Drawing.Size(50, 22)
+        Me.nltravel.TabIndex = 2
+        Me.nltravel.TabStop = True
+        Me.nltravel.Text = "NO"
+        Me.nltravel.UseVisualStyleBackColor = True
+        '
+        'Panel15
+        '
+        Me.Panel15.BackColor = System.Drawing.Color.White
+        Me.Panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel15.Controls.Add(Me.ygtravel)
+        Me.Panel15.Controls.Add(Me.ngtravel)
+        Me.Panel15.Location = New System.Drawing.Point(682, 428)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(78, 49)
+        Me.Panel15.TabIndex = 5
+        '
+        'ygtravel
+        '
+        Me.ygtravel.AutoSize = True
+        Me.ygtravel.ForeColor = System.Drawing.Color.Red
+        Me.ygtravel.Location = New System.Drawing.Point(15, 1)
+        Me.ygtravel.Name = "ygtravel"
+        Me.ygtravel.Size = New System.Drawing.Size(56, 22)
+        Me.ygtravel.TabIndex = 3
+        Me.ygtravel.TabStop = True
+        Me.ygtravel.Text = "YES"
+        Me.ygtravel.UseVisualStyleBackColor = True
+        '
+        'ngtravel
+        '
+        Me.ngtravel.AutoSize = True
+        Me.ngtravel.ForeColor = System.Drawing.Color.Blue
+        Me.ngtravel.Location = New System.Drawing.Point(15, 26)
+        Me.ngtravel.Name = "ngtravel"
+        Me.ngtravel.Size = New System.Drawing.Size(50, 22)
+        Me.ngtravel.TabIndex = 2
+        Me.ngtravel.TabStop = True
+        Me.ngtravel.Text = "NO"
+        Me.ngtravel.UseVisualStyleBackColor = True
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.White
+        Me.Panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel14.Controls.Add(Me.yf2c)
+        Me.Panel14.Controls.Add(Me.nf2c)
+        Me.Panel14.Location = New System.Drawing.Point(682, 345)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(78, 79)
+        Me.Panel14.TabIndex = 5
+        '
+        'yf2c
+        '
+        Me.yf2c.AutoSize = True
+        Me.yf2c.ForeColor = System.Drawing.Color.Red
+        Me.yf2c.Location = New System.Drawing.Point(15, 16)
+        Me.yf2c.Name = "yf2c"
+        Me.yf2c.Size = New System.Drawing.Size(56, 22)
+        Me.yf2c.TabIndex = 3
+        Me.yf2c.TabStop = True
+        Me.yf2c.Text = "YES"
+        Me.yf2c.UseVisualStyleBackColor = True
+        '
+        'nf2c
+        '
+        Me.nf2c.AutoSize = True
+        Me.nf2c.ForeColor = System.Drawing.Color.Blue
+        Me.nf2c.Location = New System.Drawing.Point(15, 44)
+        Me.nf2c.Name = "nf2c"
+        Me.nf2c.Size = New System.Drawing.Size(50, 22)
+        Me.nf2c.TabIndex = 2
+        Me.nf2c.TabStop = True
+        Me.nf2c.Text = "NO"
+        Me.nf2c.UseVisualStyleBackColor = True
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.White
+        Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel13.Controls.Add(Me.yf2f)
+        Me.Panel13.Controls.Add(Me.nf2f)
+        Me.Panel13.Location = New System.Drawing.Point(682, 263)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(78, 79)
+        Me.Panel13.TabIndex = 5
+        '
+        'yf2f
+        '
+        Me.yf2f.AutoSize = True
+        Me.yf2f.ForeColor = System.Drawing.Color.Red
+        Me.yf2f.Location = New System.Drawing.Point(15, 16)
+        Me.yf2f.Name = "yf2f"
+        Me.yf2f.Size = New System.Drawing.Size(56, 22)
+        Me.yf2f.TabIndex = 3
+        Me.yf2f.TabStop = True
+        Me.yf2f.Text = "YES"
+        Me.yf2f.UseVisualStyleBackColor = True
+        '
+        'nf2f
+        '
+        Me.nf2f.AutoSize = True
+        Me.nf2f.ForeColor = System.Drawing.Color.Blue
+        Me.nf2f.Location = New System.Drawing.Point(15, 44)
+        Me.nf2f.Name = "nf2f"
+        Me.nf2f.Size = New System.Drawing.Size(50, 22)
+        Me.nf2f.TabIndex = 2
+        Me.nf2f.TabStop = True
+        Me.nf2f.Text = "NO"
+        Me.nf2f.UseVisualStyleBackColor = True
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.White
+        Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel12.Controls.Add(Me.ydob)
+        Me.Panel12.Controls.Add(Me.ndob)
+        Me.Panel12.Controls.Add(Me.Label41)
+        Me.Panel12.Location = New System.Drawing.Point(377, 216)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(384, 43)
+        Me.Panel12.TabIndex = 5
+        '
+        'ydob
+        '
+        Me.ydob.AutoSize = True
+        Me.ydob.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ydob.ForeColor = System.Drawing.Color.Red
+        Me.ydob.Location = New System.Drawing.Point(276, 0)
+        Me.ydob.Name = "ydob"
+        Me.ydob.Size = New System.Drawing.Size(56, 41)
+        Me.ydob.TabIndex = 3
+        Me.ydob.TabStop = True
+        Me.ydob.Text = "YES"
+        Me.ydob.UseVisualStyleBackColor = True
+        '
+        'ndob
+        '
+        Me.ndob.AutoSize = True
+        Me.ndob.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ndob.ForeColor = System.Drawing.Color.Blue
+        Me.ndob.Location = New System.Drawing.Point(332, 0)
+        Me.ndob.Name = "ndob"
+        Me.ndob.Size = New System.Drawing.Size(50, 41)
+        Me.ndob.TabIndex = 2
+        Me.ndob.TabStop = True
+        Me.ndob.Text = "NO"
+        Me.ndob.UseVisualStyleBackColor = True
+        '
+        'Label41
+        '
+        Me.Label41.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label41.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label41.ForeColor = System.Drawing.Color.Black
+        Me.Label41.Location = New System.Drawing.Point(0, 0)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(253, 41)
+        Me.Label41.TabIndex = 1
+        Me.Label41.Text = "Difficulty of breathing " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Pagkahapo o hirap sa pag hinga)"
+        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.White
+        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel5.Controls.Add(Me.ybody)
+        Me.Panel5.Controls.Add(Me.nbody)
+        Me.Panel5.Controls.Add(Me.Label32)
+        Me.Panel5.Location = New System.Drawing.Point(411, 168)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(350, 43)
+        Me.Panel5.TabIndex = 5
+        '
+        'ybody
+        '
+        Me.ybody.AutoSize = True
+        Me.ybody.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ybody.ForeColor = System.Drawing.Color.Red
+        Me.ybody.Location = New System.Drawing.Point(242, 0)
+        Me.ybody.Name = "ybody"
+        Me.ybody.Size = New System.Drawing.Size(56, 41)
+        Me.ybody.TabIndex = 3
+        Me.ybody.TabStop = True
+        Me.ybody.Text = "YES"
+        Me.ybody.UseVisualStyleBackColor = True
+        '
+        'nbody
+        '
+        Me.nbody.AutoSize = True
+        Me.nbody.Dock = System.Windows.Forms.DockStyle.Right
+        Me.nbody.ForeColor = System.Drawing.Color.Blue
+        Me.nbody.Location = New System.Drawing.Point(298, 0)
+        Me.nbody.Name = "nbody"
+        Me.nbody.Size = New System.Drawing.Size(50, 41)
+        Me.nbody.TabIndex = 2
+        Me.nbody.TabStop = True
+        Me.nbody.Text = "NO"
+        Me.nbody.UseVisualStyleBackColor = True
+        '
+        'Label32
+        '
+        Me.Label32.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label32.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label32.ForeColor = System.Drawing.Color.Black
+        Me.Label32.Location = New System.Drawing.Point(0, 0)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(178, 41)
+        Me.Label32.TabIndex = 1
+        Me.Label32.Text = "Body pains " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Pananakit ng katawan)"
+        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.yfever)
+        Me.Panel3.Controls.Add(Me.nfever)
+        Me.Panel3.Controls.Add(Me.Label34)
+        Me.Panel3.Location = New System.Drawing.Point(5, 74)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(226, 43)
+        Me.Panel3.TabIndex = 5
+        '
+        'yfever
+        '
+        Me.yfever.AutoSize = True
+        Me.yfever.Dock = System.Windows.Forms.DockStyle.Right
+        Me.yfever.ForeColor = System.Drawing.Color.Red
+        Me.yfever.Location = New System.Drawing.Point(118, 0)
+        Me.yfever.Name = "yfever"
+        Me.yfever.Size = New System.Drawing.Size(56, 41)
+        Me.yfever.TabIndex = 3
+        Me.yfever.TabStop = True
+        Me.yfever.Text = "YES"
+        Me.yfever.UseVisualStyleBackColor = True
+        '
+        'nfever
+        '
+        Me.nfever.AutoSize = True
+        Me.nfever.Dock = System.Windows.Forms.DockStyle.Right
+        Me.nfever.ForeColor = System.Drawing.Color.Blue
+        Me.nfever.Location = New System.Drawing.Point(174, 0)
+        Me.nfever.Name = "nfever"
+        Me.nfever.Size = New System.Drawing.Size(50, 41)
+        Me.nfever.TabIndex = 2
+        Me.nfever.TabStop = True
+        Me.nfever.Text = "NO"
+        Me.nfever.UseVisualStyleBackColor = True
+        '
+        'Label34
+        '
+        Me.Label34.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label34.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label34.ForeColor = System.Drawing.Color.Black
+        Me.Label34.Location = New System.Drawing.Point(0, 0)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(132, 41)
+        Me.Label34.TabIndex = 1
+        Me.Label34.Text = "Fever " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Lagnat)"
+        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.White
+        Me.Panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel11.Controls.Add(Me.ylost)
+        Me.Panel11.Controls.Add(Me.nlost)
+        Me.Panel11.Controls.Add(Me.Label40)
+        Me.Panel11.Location = New System.Drawing.Point(5, 215)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(366, 43)
+        Me.Panel11.TabIndex = 5
+        '
+        'ylost
+        '
+        Me.ylost.AutoSize = True
+        Me.ylost.BackColor = System.Drawing.Color.White
+        Me.ylost.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ylost.ForeColor = System.Drawing.Color.Red
+        Me.ylost.Location = New System.Drawing.Point(258, 0)
+        Me.ylost.Name = "ylost"
+        Me.ylost.Size = New System.Drawing.Size(56, 41)
+        Me.ylost.TabIndex = 3
+        Me.ylost.TabStop = True
+        Me.ylost.Text = "YES"
+        Me.ylost.UseVisualStyleBackColor = False
+        '
+        'nlost
+        '
+        Me.nlost.AutoSize = True
+        Me.nlost.BackColor = System.Drawing.Color.White
+        Me.nlost.Dock = System.Windows.Forms.DockStyle.Right
+        Me.nlost.ForeColor = System.Drawing.Color.Blue
+        Me.nlost.Location = New System.Drawing.Point(314, 0)
+        Me.nlost.Name = "nlost"
+        Me.nlost.Size = New System.Drawing.Size(50, 41)
+        Me.nlost.TabIndex = 2
+        Me.nlost.TabStop = True
+        Me.nlost.Text = "NO"
+        Me.nlost.UseVisualStyleBackColor = False
+        '
+        'Label40
+        '
+        Me.Label40.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label40.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label40.ForeColor = System.Drawing.Color.Black
+        Me.Label40.Location = New System.Drawing.Point(0, 0)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(261, 41)
+        Me.Label40.TabIndex = 1
+        Me.Label40.Text = "Loss of taste or smell " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Nawalan ng panlasa o pang-amoy)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.White
+        Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel6.Controls.Add(Me.ysore)
+        Me.Panel6.Controls.Add(Me.nsore)
+        Me.Panel6.Controls.Add(Me.Label35)
+        Me.Panel6.Location = New System.Drawing.Point(5, 168)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(400, 43)
+        Me.Panel6.TabIndex = 5
+        '
+        'ysore
+        '
+        Me.ysore.AutoSize = True
+        Me.ysore.BackColor = System.Drawing.Color.White
+        Me.ysore.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ysore.ForeColor = System.Drawing.Color.Red
+        Me.ysore.Location = New System.Drawing.Point(292, 0)
+        Me.ysore.Name = "ysore"
+        Me.ysore.Size = New System.Drawing.Size(56, 41)
+        Me.ysore.TabIndex = 3
+        Me.ysore.TabStop = True
+        Me.ysore.Text = "YES"
+        Me.ysore.UseVisualStyleBackColor = False
+        '
+        'nsore
+        '
+        Me.nsore.AutoSize = True
+        Me.nsore.BackColor = System.Drawing.Color.White
+        Me.nsore.Dock = System.Windows.Forms.DockStyle.Right
+        Me.nsore.ForeColor = System.Drawing.Color.Blue
+        Me.nsore.Location = New System.Drawing.Point(348, 0)
+        Me.nsore.Name = "nsore"
+        Me.nsore.Size = New System.Drawing.Size(50, 41)
+        Me.nsore.TabIndex = 2
+        Me.nsore.TabStop = True
+        Me.nsore.Text = "NO"
+        Me.nsore.UseVisualStyleBackColor = False
+        '
+        'Label35
+        '
+        Me.Label35.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label35.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label35.ForeColor = System.Drawing.Color.Black
+        Me.Label35.Location = New System.Drawing.Point(0, 0)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(308, 41)
+        Me.Label35.TabIndex = 1
+        Me.Label35.Text = "Sore Throat " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Pananakit o pamamaga ng /alamunan)"
+        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.White
+        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel4.Controls.Add(Me.yubo)
+        Me.Panel4.Controls.Add(Me.nubo)
+        Me.Panel4.Controls.Add(Me.Label33)
+        Me.Panel4.Location = New System.Drawing.Point(492, 74)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(269, 43)
+        Me.Panel4.TabIndex = 5
+        '
+        'yubo
+        '
+        Me.yubo.AutoSize = True
+        Me.yubo.BackColor = System.Drawing.Color.White
+        Me.yubo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.yubo.ForeColor = System.Drawing.Color.Red
+        Me.yubo.Location = New System.Drawing.Point(161, 0)
+        Me.yubo.Name = "yubo"
+        Me.yubo.Size = New System.Drawing.Size(56, 41)
+        Me.yubo.TabIndex = 3
+        Me.yubo.TabStop = True
+        Me.yubo.Text = "YES"
+        Me.yubo.UseVisualStyleBackColor = False
+        '
+        'nubo
+        '
+        Me.nubo.AutoSize = True
+        Me.nubo.BackColor = System.Drawing.Color.White
+        Me.nubo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.nubo.ForeColor = System.Drawing.Color.Blue
+        Me.nubo.Location = New System.Drawing.Point(217, 0)
+        Me.nubo.Name = "nubo"
+        Me.nubo.Size = New System.Drawing.Size(50, 41)
+        Me.nubo.TabIndex = 2
+        Me.nubo.TabStop = True
+        Me.nubo.Text = "NO"
+        Me.nubo.UseVisualStyleBackColor = False
+        '
+        'Label33
+        '
+        Me.Label33.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label33.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label33.ForeColor = System.Drawing.Color.Black
+        Me.Label33.Location = New System.Drawing.Point(0, 0)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(151, 41)
+        Me.Label33.TabIndex = 1
+        Me.Label33.Text = "Cough and/or Colds " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Ubo at/o Sipon)"
+        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label45
+        '
+        Me.Label45.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label45.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label45.ForeColor = System.Drawing.Color.Black
+        Me.Label45.Location = New System.Drawing.Point(6, 482)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(670, 49)
+        Me.Label45.TabIndex = 2
+        Me.Label45.Text = "Have you traveled outside the current city/municipality where you reside? (lkaw b" &
+    "a ay" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "nagbiyahe sa labas ng iyong lungsod/munisipyo?) "
+        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label44
+        '
+        Me.Label44.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label44.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label44.ForeColor = System.Drawing.Color.Black
+        Me.Label44.Location = New System.Drawing.Point(6, 428)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(670, 49)
+        Me.Label44.TabIndex = 2
+        Me.Label44.Text = "Have you traveled outside the Philippines in the last 14 days? (lkaw ba ay nagbiy" &
+    "ahe sa labas ng Pilipinas sa nakalipas na 14 na araw?)"
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label43
+        '
+        Me.Label43.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label43.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label43.ForeColor = System.Drawing.Color.Black
+        Me.Label43.Location = New System.Drawing.Point(6, 345)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(670, 79)
+        Me.Label43.TabIndex = 2
+        Me.Label43.Text = resources.GetString("Label43.Text")
+        Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label42
+        '
+        Me.Label42.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label42.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label42.ForeColor = System.Drawing.Color.Black
+        Me.Label42.Location = New System.Drawing.Point(6, 263)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(670, 79)
+        Me.Label42.TabIndex = 2
+        Me.Label42.Text = resources.GetString("Label42.Text")
+        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label31
+        '
+        Me.Label31.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label31.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label31.ForeColor = System.Drawing.Color.Black
+        Me.Label31.Location = New System.Drawing.Point(0, 25)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(767, 45)
+        Me.Label31.TabIndex = 2
+        Me.Label31.Text = "Are you experiencing or did you have any of the following in the last 14 days? (l" &
+    "kaw ba ay may nararanasan o nakaranas ng mga sumusunod na sintomas sa nakaraang " &
+    "14 na araw?)"
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.HDMAIL)
+        Me.GroupBox3.Controls.Add(Me.HDPHONE)
+        Me.GroupBox3.Controls.Add(Me.Label30)
+        Me.GroupBox3.Controls.Add(Me.Label29)
+        Me.GroupBox3.Controls.Add(Me.HDADDRESS)
+        Me.GroupBox3.Controls.Add(Me.HDTIME)
+        Me.GroupBox3.Controls.Add(Me.HDDATE)
+        Me.GroupBox3.Controls.Add(Me.Label27)
+        Me.GroupBox3.Controls.Add(Me.Label28)
+        Me.GroupBox3.Controls.Add(Me.Label26)
+        Me.GroupBox3.Controls.Add(Me.HDNAME)
+        Me.GroupBox3.Controls.Add(Me.Label25)
+        Me.GroupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.GroupBox3.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.GroupBox3.ForeColor = System.Drawing.Color.Blue
+        Me.GroupBox3.Location = New System.Drawing.Point(20, 226)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(411, 444)
+        Me.GroupBox3.TabIndex = 2
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Personal Information"
+        '
+        'HDMAIL
+        '
+        Me.HDMAIL.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HDMAIL.Location = New System.Drawing.Point(9, 399)
+        Me.HDMAIL.Name = "HDMAIL"
+        Me.HDMAIL.Size = New System.Drawing.Size(391, 30)
+        Me.HDMAIL.TabIndex = 6
+        Me.HDMAIL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'HDPHONE
+        '
+        Me.HDPHONE.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HDPHONE.Location = New System.Drawing.Point(9, 327)
+        Me.HDPHONE.Name = "HDPHONE"
+        Me.HDPHONE.Size = New System.Drawing.Size(391, 30)
+        Me.HDPHONE.TabIndex = 5
+        Me.HDPHONE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label30.Location = New System.Drawing.Point(9, 378)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(48, 18)
+        Me.Label30.TabIndex = 4
+        Me.Label30.Text = "Email"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label29.Location = New System.Drawing.Point(9, 306)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(82, 18)
+        Me.Label29.TabIndex = 4
+        Me.Label29.Text = "Telephone"
+        '
+        'HDADDRESS
+        '
+        Me.HDADDRESS.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HDADDRESS.Location = New System.Drawing.Point(9, 203)
+        Me.HDADDRESS.Name = "HDADDRESS"
+        Me.HDADDRESS.Size = New System.Drawing.Size(391, 82)
+        Me.HDADDRESS.TabIndex = 3
+        Me.HDADDRESS.Text = ""
+        '
+        'HDTIME
+        '
+        Me.HDTIME.CalendarForeColor = System.Drawing.Color.Blue
+        Me.HDTIME.CalendarTitleForeColor = System.Drawing.Color.Blue
+        Me.HDTIME.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HDTIME.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.HDTIME.Location = New System.Drawing.Point(232, 131)
+        Me.HDTIME.Name = "HDTIME"
+        Me.HDTIME.Size = New System.Drawing.Size(168, 30)
+        Me.HDTIME.TabIndex = 2
+        '
+        'HDDATE
+        '
+        Me.HDDATE.CalendarForeColor = System.Drawing.Color.Blue
+        Me.HDDATE.CalendarTitleForeColor = System.Drawing.Color.Blue
+        Me.HDDATE.CalendarTrailingForeColor = System.Drawing.Color.Blue
+        Me.HDDATE.CustomFormat = "ddd MM/DD/YYYY"
+        Me.HDDATE.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HDDATE.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.HDDATE.Location = New System.Drawing.Point(9, 131)
+        Me.HDDATE.Name = "HDDATE"
+        Me.HDDATE.Size = New System.Drawing.Size(201, 30)
+        Me.HDDATE.TabIndex = 2
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label27.ForeColor = System.Drawing.Color.DimGray
+        Me.Label27.Location = New System.Drawing.Point(232, 110)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(95, 18)
+        Me.Label27.TabIndex = 0
+        Me.Label27.Text = "Time / Oras"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label28.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label28.Location = New System.Drawing.Point(9, 182)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(142, 18)
+        Me.Label28.TabIndex = 0
+        Me.Label28.Text = "Address  / Tirahan"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label26.Location = New System.Drawing.Point(9, 110)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(100, 18)
+        Me.Label26.TabIndex = 0
+        Me.Label26.Text = "Date / Petsa "
+        '
+        'HDNAME
+        '
+        Me.HDNAME.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.HDNAME.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HDNAME.ForeColor = System.Drawing.Color.Blue
+        Me.HDNAME.Location = New System.Drawing.Point(9, 59)
+        Me.HDNAME.Name = "HDNAME"
+        Me.HDNAME.Size = New System.Drawing.Size(391, 30)
+        Me.HDNAME.TabIndex = 1
+        Me.HDNAME.Text = "Full Name"
+        Me.HDNAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label25.Location = New System.Drawing.Point(9, 38)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(130, 18)
+        Me.Label25.TabIndex = 0
+        Me.Label25.Text = "Name / Pangalan"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.BID)
+        Me.GroupBox2.Controls.Add(Me.hdid)
+        Me.GroupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.GroupBox2.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Blue
+        Me.GroupBox2.Location = New System.Drawing.Point(20, 77)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(411, 133)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Scan ID Here!"
+        '
+        'BID
+        '
+        Me.BID.BackColor = System.Drawing.Color.IndianRed
+        Me.BID.Font = New System.Drawing.Font("Georgia", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.BID.ForeColor = System.Drawing.Color.White
+        Me.BID.Location = New System.Drawing.Point(97, 87)
+        Me.BID.Name = "BID"
+        Me.BID.Size = New System.Drawing.Size(219, 38)
+        Me.BID.TabIndex = 1
+        Me.BID.Text = "Find User"
+        Me.BID.UseVisualStyleBackColor = False
+        '
+        'hdid
+        '
+        Me.hdid.Font = New System.Drawing.Font("Georgia", 32.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.hdid.Location = New System.Drawing.Point(7, 25)
+        Me.hdid.Name = "hdid"
+        Me.hdid.Size = New System.Drawing.Size(398, 56)
+        Me.hdid.TabIndex = 0
+        Me.hdid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label24
+        '
+        Me.Label24.BackColor = System.Drawing.Color.Transparent
+        Me.Label24.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label24.Font = New System.Drawing.Font("Georgia", 40.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label24.ForeColor = System.Drawing.Color.DeepPink
+        Me.Label24.Location = New System.Drawing.Point(3, 3)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(1220, 63)
+        Me.Label24.TabIndex = 0
+        Me.Label24.Text = "HEALTH DECLARATION FORM"
+        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tadmin
         '
@@ -828,12 +1890,47 @@ Partial Class Form1
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.TabControl1.ResumeLayout(False)
+        Me.TC.ResumeLayout(False)
         Me.llogin.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.treg.ResumeLayout(False)
         Me.treg.PerformLayout()
+        Me.tmon.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.Panel10.ResumeLayout(False)
+        Me.Panel10.PerformLayout()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        Me.Panel16.ResumeLayout(False)
+        Me.Panel16.PerformLayout()
+        Me.Panel15.ResumeLayout(False)
+        Me.Panel15.PerformLayout()
+        Me.Panel14.ResumeLayout(False)
+        Me.Panel14.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel13.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -847,7 +1944,7 @@ Partial Class Form1
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripSeparator
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TC As TabControl
     Friend WithEvents treg As TabPage
     Friend WithEvents tmon As TabPage
     Friend WithEvents Label1 As Label
@@ -889,16 +1986,94 @@ Partial Class Form1
     Friend WithEvents Label22 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents SplitContainer1 As SplitContainer
-    Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents noti As RichTextBox
     Friend WithEvents SplitContainer2 As SplitContainer
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents PB As ProgressBar
+    Friend WithEvents cuser As Label
+    Friend WithEvents clevel As Label
+    Friend WithEvents PBAR As ProgressBar
     Friend WithEvents llogin As TabPage
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents loginpass As TextBox
+    Friend WithEvents loginuser As TextBox
     Friend WithEvents Label23 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Blogin As Button
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents hdid As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents HDTIME As DateTimePicker
+    Friend WithEvents HDDATE As DateTimePicker
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents HDNAME As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents BID As Button
+    Friend WithEvents HDADDRESS As RichTextBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents HDPHONE As TextBox
+    Friend WithEvents HDMAIL As TextBox
+    Friend WithEvents Label30 As Label
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents yfever As RadioButton
+    Friend WithEvents nfever As RadioButton
+    Friend WithEvents Label34 As Label
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents yubo As RadioButton
+    Friend WithEvents nubo As RadioButton
+    Friend WithEvents Label33 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents ybody As RadioButton
+    Friend WithEvents nbody As RadioButton
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents ysore As RadioButton
+    Friend WithEvents nsore As RadioButton
+    Friend WithEvents Label35 As Label
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents ytae As RadioButton
+    Friend WithEvents ntae As RadioButton
+    Friend WithEvents Label39 As Label
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents yulo As RadioButton
+    Friend WithEvents nulo As RadioButton
+    Friend WithEvents Label38 As Label
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents ysuka As RadioButton
+    Friend WithEvents nsuka As RadioButton
+    Friend WithEvents Label37 As Label
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents ypagod As RadioButton
+    Friend WithEvents npagod As RadioButton
+    Friend WithEvents Label36 As Label
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents ydob As RadioButton
+    Friend WithEvents ndob As RadioButton
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents ylost As RadioButton
+    Friend WithEvents nlost As RadioButton
+    Friend WithEvents Label40 As Label
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents yf2f As RadioButton
+    Friend WithEvents nf2f As RadioButton
+    Friend WithEvents Label42 As Label
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents ygtravel As RadioButton
+    Friend WithEvents ngtravel As RadioButton
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents yf2c As RadioButton
+    Friend WithEvents nf2c As RadioButton
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents HDTEMP As TextBox
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Panel16 As Panel
+    Friend WithEvents yltravel As RadioButton
+    Friend WithEvents nltravel As RadioButton
+    Friend WithEvents Label45 As Label
+    Friend WithEvents BSUBMIT As Button
 End Class

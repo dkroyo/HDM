@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\educ\\HDM\\HDM\\HDM.vbproj": {}
+    "C:\\Education\\Design\\Project\\HDM\\GIT\\hdmonitor\\HDM\\HDM\\HDM.vbproj": {}
   },
   "projects": {
-    "C:\\educ\\HDM\\HDM\\HDM.vbproj": {
+    "C:\\Education\\Design\\Project\\HDM\\GIT\\hdmonitor\\HDM\\HDM\\HDM.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\educ\\HDM\\HDM\\HDM.vbproj",
+        "projectUniqueName": "C:\\Education\\Design\\Project\\HDM\\GIT\\hdmonitor\\HDM\\HDM\\HDM.vbproj",
         "projectName": "HDM",
-        "projectPath": "C:\\educ\\HDM\\HDM\\HDM.vbproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\educ\\HDM\\HDM\\obj\\",
+        "projectPath": "C:\\Education\\Design\\Project\\HDM\\GIT\\hdmonitor\\HDM\\HDM\\HDM.vbproj",
+        "packagesPath": "C:\\Users\\DanKe\\.nuget\\packages\\",
+        "outputPath": "C:\\Education\\Design\\Project\\HDM\\GIT\\hdmonitor\\HDM\\HDM\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\DanKe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

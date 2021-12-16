@@ -124,6 +124,9 @@
   <data name="covid 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\covid 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="loging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\loging.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="covid11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\covid1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,5 +141,8 @@
   </data>
   <data name="reg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\reg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="covid3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\covid3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
