@@ -10,18 +10,22 @@ Module HDF
 
 
 
-    Public Sub notif(ByRef nmessage As String, Optional ByRef ncolor As String = "")
+    Public Sub notif(ByRef nmessage As String, Optional ByRef ncolor As Integer = 0)
         With Form1
-            .noti.AppendText(vbCrLf & " " & nmessage)
 
-            If colorrandomizer = 0 Then
-                .noti.SelectionColor = Color.LimeGreen
-                colorrandomizer = 1
+            If ncolor = 3 Then
+                .noti.SelectionColor = Color.Red
             Else
-                .noti.SelectionColor = Color.Cyan
-                colorrandomizer = 0
+                If colorrandomizer = 0 Then
+                    .noti.SelectionColor = Color.LimeGreen
+                    colorrandomizer = 1
+                Else
+                    .noti.SelectionColor = Color.Cyan
+                    colorrandomizer = 0
+                End If
             End If
 
+            .noti.AppendText(vbCrLf & " " & nmessage)
             .Refresh()
             .noti.ScrollToCaret()
 

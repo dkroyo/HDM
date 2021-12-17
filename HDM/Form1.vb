@@ -3,7 +3,13 @@ Public Class Form1
 
     Public rhid As String, rBID As String, rHDNAME As String, rHDDATE As String, rHDTIME As String, rHDADDRESS As String, rHDPHONE As String, rHDMAIL As String, rHDTEMP As String, rBSUBMIT As String
 
+    Private Sub loginpass_TextChanged(sender As Object, e As EventArgs) Handles loginpass.TextChanged
 
+    End Sub
+
+    Private Sub loginuser_TextChanged(sender As Object, e As EventArgs) Handles loginuser.TextChanged
+
+    End Sub
 
     Public fever As String, pagod As String, tae As String, ulo As String, ubo As String, suka As String, sore As String, body As String, lost As String, dob As String, f2f As String, f2c As String, gtravel As String, ltravel As String
 
@@ -21,6 +27,9 @@ Public Class Form1
 
 
             If myuser = youruser And mypass = yourpass Then
+                cuser.Text = "Current User: Administrator"
+                clevel.Text = "Access Level: 3"
+                notif("Signing in...")
             Else
                 Beep()
                 notif("Username/Password is incorrect!", 3)
@@ -53,8 +62,11 @@ Public Class Form1
         'Show Tabs
         TC.TabPages.Insert(0, llogin)
 
+        Me.llogin.Select()
 
     End Sub
+
+
 
     Private Sub yfever_CheckedChanged(sender As Object, e As EventArgs) Handles yfever.CheckedChanged
 
@@ -77,6 +89,9 @@ Public Class Form1
 
     'this function will ensure that the program will start at fresh condition
     Sub inithdfvalues()
+        notif("")
+        notif("")
+        notif("")
         pb(PBAR.Minimum)
         Dim c As Integer = 1
         notif("Initializing Health Declaration Form")
@@ -100,5 +115,27 @@ Public Class Form1
         pb(PBAR.Maximum)
     End Sub
 
+    Private Sub Form1_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        pb(0)
+        noti.Text = ""
+        cuser.Text = "Sign In"
+        clevel.Text = "No Access"
+        loginuser.Select()
+        loginuser.Focus()
+        notif("Please Login to Continue")
+        pb(100)
+    End Sub
 
+    Private Sub loginuser_KeyDown(sender As Object, e As KeyEventArgs) Handles loginuser.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            loginpass.Select()
+        End If
+    End Sub
+
+    Private Sub loginpass_KeyDown(sender As Object, e As KeyEventArgs) Handles loginpass.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Blogin.Select()
+            Blogin.PerformClick()
+        End If
+    End Sub
 End Class

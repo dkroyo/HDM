@@ -415,7 +415,7 @@ Partial Class Form1
         Me.loginuser.Location = New System.Drawing.Point(10, 94)
         Me.loginuser.Name = "loginuser"
         Me.loginuser.Size = New System.Drawing.Size(307, 39)
-        Me.loginuser.TabIndex = 2
+        Me.loginuser.TabIndex = 0
         Me.loginuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label23
