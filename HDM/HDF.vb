@@ -1,9 +1,29 @@
 ﻿Imports System
 Imports HDM.Form1
+Imports MySql.Data.MySqlClient
 
 Module HDF
     Public colorrandomizer As Integer = 0
 
+    Public Sub myquery()
+        Dim conn As MySqlConnection
+
+        conn = New MySqlConnection()
+        '34.87.110.210
+        conn.ConnectionString = cons
+        Try
+            conn.Open()
+            MessageBox.Show("OK")
+            conn.Close()
+        Catch myerror As MySqlException
+            MessageBox.Show("Error: " & myerror.Message)
+
+        Finally
+            conn.Dispose()
+        End Try
+
+
+    End Sub
     Public Sub radiovalchange()
 
     End Sub

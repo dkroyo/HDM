@@ -55,3 +55,16 @@ C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\obj\Debug\net5.0-windows\H
 C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\obj\Debug\net5.0-windows\ref\HDM.dll
 C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\obj\Debug\net5.0-windows\HDM.pdb
 C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\obj\Debug\net5.0-windows\HDM.genruntimeconfig.cache
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\MySqlConnector.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\ZstdNet.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\obj\Debug\net5.0-windows\HDM.vbproj.CopyComplete
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\MySql.Web.dll
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\MySql.Data.xml
+C:\Education\Design\Project\HDM\GIT\hdmonitor\HDM\HDM\bin\Debug\net5.0-windows\MySql.Web.xml

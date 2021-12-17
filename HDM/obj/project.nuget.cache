@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wDV5hano+WQDWau0nh1XbzFjnV0whcU33Dkd+BGs0drj84xuS9DNMeEUDPd0oA84F+r3NumhgIA6YdDr5yHr4A==",
+  "dgSpecHash": "z0BbeSV5jcwrt4ej4ppka3ysQYpvRtUit+4YNxFWTYV46Y4DrbtXsG3sb+wtLeg+N1uzf1VDAQKOCjccwqkEXA==",
   "success": true,
-  "projectFilePath": "C:\\educ\\HDM\\HDM\\HDM.vbproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Education\\Design\\Project\\HDM\\GIT\\hdmonitor\\HDM\\HDM\\HDM.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DanKe\\.nuget\\packages\\mysqlconnector\\2.1.0\\mysqlconnector.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
