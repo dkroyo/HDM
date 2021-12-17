@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "qltq+z8rDuNYw50oR7+Yn/jXNTm7ZhL4g2AutwTQvtzMz5gUeCUL0MiJNg99Ox5S6OeyYVbUXwNAF5rtF3ShQA==",
+  "success": true,
+  "projectFilePath": "C:\\Education\\Design\\Project\\HDM\\GIT\\hdmonitor\\HDM\\HDM\\HDM.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DanKe\\.nuget\\packages\\mysqlconnector\\2.1.0\\mysqlconnector.2.1.0.nupkg.sha512",
+    "C:\\Users\\DanKe\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.12\\microsoft.netcore.app.runtime.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\DanKe\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.12\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\DanKe\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.12\\microsoft.aspnetcore.app.runtime.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

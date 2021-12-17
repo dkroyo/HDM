@@ -1,0 +1,13 @@
+C:\Users\DanKe\Downloads\HDM.pdb
+C:\Users\DanKe\Downloads\clrcompression.dll
+C:\Users\DanKe\Downloads\clrjit.dll
+C:\Users\DanKe\Downloads\coreclr.dll
+C:\Users\DanKe\Downloads\mscordaccore.dll
+C:\Users\DanKe\Downloads\D3DCompiler_47_cor3.dll
+C:\Users\DanKe\Downloads\PenImc_cor3.dll
+C:\Users\DanKe\Downloads\PresentationNative_cor3.dll
+C:\Users\DanKe\Downloads\vcruntime140_cor3.dll
+C:\Users\DanKe\Downloads\wpfgfx_cor3.dll
+C:\Users\DanKe\Downloads\MySql.Data.xml
+C:\Users\DanKe\Downloads\MySql.Web.xml
+C:\Users\DanKe\Downloads\HDM.exe
